@@ -7,7 +7,7 @@
 [![Docker](https://img.shields.io/badge/Docker-ready-blue?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A clean and ready-to-use boilerplate for building high-performance asynchronous web services using **Salvo** 🦀 and **PostgreSQL** 🐘.This template helps you quickly start developing Rust-based APIs with database integration and migrations powered by **Diesel**.
+A clean and ready-to-use boilerplate for building high-performance asynchronous web services using **Salvo** 🦀 and **PostgreSQL** 🐘. This template helps you quickly start developing Rust-based APIs with database integration and migrations powered by **Diesel**.
 
 ---
 
