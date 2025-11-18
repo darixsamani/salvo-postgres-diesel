@@ -20,6 +20,7 @@ services:
       - POSTGRES_PASSWORD=6775212952
       - POSTGRES_DB=salvo_postgres
       - POSTGRES_PORT=5432
+      - POSTGRES_SERVER=db
     volumes:
       - ./db_data:/var/lib/postgresql/data
     healthcheck:
