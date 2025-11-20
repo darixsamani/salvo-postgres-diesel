@@ -383,7 +383,7 @@ fn get_access_token(res: &mut Response, user_credentiel: JsonBody<UserCredentiel
 
     res.status_code(StatusCode::OK);
     res.render(Json(TokenResponseModel{
-        type_token: String::from("Bearer"),
+        token_type: String::from("Bearer"),
         token: String::from(token.unwrap())
     }));
 }

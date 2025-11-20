@@ -10,7 +10,7 @@ pub struct JwtClaims {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TokenResponseModel{
-    pub type_token: String,
+    pub token_type: String,
     pub token: String
 }
 
