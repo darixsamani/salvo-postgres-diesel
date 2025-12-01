@@ -1,4 +1,4 @@
-# 🚀 Salvo Postgres Boilerplate
+# 🚀 Salvo Postgres Diesel Boilerplate
 
 [![Rust](https://img.shields.io/badge/Rust-%23DEA584.svg?style=flat&logo=rust&logoColor=white)](https://www.rust-lang.org/)
 [![Salvo](https://img.shields.io/badge/Framework-Salvo-orange?style=flat&logo=rust)](https://salvo.rs/)
