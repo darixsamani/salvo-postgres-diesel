@@ -74,7 +74,7 @@ cp .env.example .env
 Next, update the DATABASE_URL inside .env to match your local PostgreSQL setup. For example:
 
 ```
-echo DATABASE_URL=postgres://darix:6775212952@localhost:5432/salvo_postgres > .env
+echo DATABASE_URL=postgres://darix:6775212952@localhost:5432/salvo_postgres_diesel > .env
 ```
 
 
