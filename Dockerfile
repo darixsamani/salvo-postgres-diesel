@@ -17,9 +17,9 @@ FROM scratch
 
 WORKDIR /app
 
-# ENV DATABASE_URL=postgres://darix:6775212952@localhost:5432/salvo_postgres
+# ENV DATABASE_URL=postgres://darix:6775212952@localhost:5432/salvo_postgres_diesel
 
-COPY --from=builder /app/target/release/salvo_postgres /app/salvo_postgres
+COPY --from=builder /app/target/release/salvo_postgres_diesel /app/salvo_postgres_diesel
 
 # Copy diesel CLI (from builder)
 COPY --from=builder /usr/local/cargo/bin/diesel /usr/local/bin/diesel
@@ -28,4 +28,4 @@ COPY --from=builder . /app/
 
 EXPOSE 5800
 
-CMD ["/app/salvo_postgres"]
+CMD ["/app/salvo_postgres_diesel"]
