@@ -353,7 +353,7 @@ fn get_access_token(res: &mut Response, user_credentiel: JsonBody<UserCredentiel
         res.status_code(StatusCode::BAD_REQUEST);
         res.render(Json(
             ErrorResponseModel{
-                detail: format!("🚫 Invalide username or password")
+                detail: format!("🚫 Invalid username or password")
             }
         ));
         return;
