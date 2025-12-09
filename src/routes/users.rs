@@ -360,7 +360,7 @@ fn get_access_token(res: &mut Response, user_credentiel: JsonBody<UserCredentiel
     };
 
     if !verify_password(&user_credentiel.password.clone().as_str(), &user.password.clone().as_str()){
-        print!("bad password");
+        println!("bad password");
         res.status_code(StatusCode::BAD_REQUEST);
         res.render(Json(
             ErrorResponseModel{
