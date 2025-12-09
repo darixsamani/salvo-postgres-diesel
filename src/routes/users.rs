@@ -349,7 +349,7 @@ fn get_access_token(res: &mut Response, user_credentiel: JsonBody<UserCredentiel
 
     // ✅ Handle "not found" case
     let Some(user) = existing_user else {
-        print!("no existing users");
+        eprintln!("no existing users");
         res.status_code(StatusCode::BAD_REQUEST);
         res.render(Json(
             ErrorResponseModel{
