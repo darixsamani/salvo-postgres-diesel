@@ -210,7 +210,7 @@ fn update_users(user_id: PathParam<Uuid>, res: &mut Response, authentication: He
                 res.render(Json(UserSuccessResponseModel {
                     id: current_user.id,
                     email: current_user.username.clone(),
-                    full_name: current_user.full_name.clone(),
+                    full_name: update_data.fullname.clone(),
                     created_at: current_user.created_at.clone(),
                     updated_at: current_user.updated_at.clone()
 
