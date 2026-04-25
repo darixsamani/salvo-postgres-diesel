@@ -14,6 +14,7 @@ RUN cargo build --release --target-dir target
 
 
 FROM scratch
+LABEL maintainer="Darix SAMANI SIEWE <samanidarix@gmail.com>"
 
 WORKDIR /app
 
