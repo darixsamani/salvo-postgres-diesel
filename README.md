@@ -97,7 +97,7 @@ If you prefer running the application directly with Docker, update the environme
 docker build -t salvo_postgres_app .
 
 docker run -d -p 5800:5800 \
-  -e DATABASE_URL="postgres://darix:6775212952@localhost:5432/salvo_postgres" \
+  -e DATABASE_URL="postgres://darix:6775212952@localhost:5432/salvo_postgres_diesel" \
   --name salvo_postgres_app \
   salvo_postgres_app
 
@@ -116,6 +116,13 @@ docker compose up -d --build
 
 ---
 
+### 🏃‍♂️ Run the tests sequentially 🧪📋
+
+```
+cargo test -- --test-threads=1
+```
+
+---
 
 ### 🌐 Access the API Docs
 
